@@ -556,7 +556,6 @@ def test_count_tokens_with_anthropic_api_respects_deployment_api_base():
     import asyncio
     from types import SimpleNamespace
     from unittest.mock import MagicMock, patch
-    import sys
 
     messages = [{"role": "user", "content": "Hello"}]
     deployment = {
@@ -601,7 +600,6 @@ def test_count_tokens_with_anthropic_api_respects_env_api_base(monkeypatch):
     import asyncio
     from types import SimpleNamespace
     from unittest.mock import MagicMock, patch
-    import sys
 
     messages = [{"role": "user", "content": "Hi"}]
     deployment = {"litellm_params": {"api_key": "test-key"}}
